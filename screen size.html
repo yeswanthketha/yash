@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--media queries
+    extra small-480px(moible device)
+    small screen - 767px (ipad & moible landscape)
+     medium screen - 1024px (ipad landscape & small screen laptops)
+     extra large screen -> 1280 (large screen laptop)
+    -->
+
+    <style>
+        p{
+            color:red ;
+        }
+        h1{
+            background-color: yellow;
+        }
+        .div{
+            display: flex;
+            gap: 1rem;
+
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        @media (max-width:600px){
+            .div{
+                display: block;
+
+            }
+            .child{
+                margin-top: 10px;
+                background-color: rebeccapurple;
+            }
+
+        }
+
+        @media (max-width:400px){
+            .child1{
+                width: 300px;
+                background-color: green;
+
+            }
+        }
+    </style>
+    <p>this is p</p>
+    <img src="./IMG_20230503_155616.jpg" alt="" width="300px" height="400px">
+    <h1>this is h1</h1>
+
+    <div class="div">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child child1"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
